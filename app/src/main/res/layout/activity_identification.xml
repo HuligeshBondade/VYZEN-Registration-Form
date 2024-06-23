@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/light_green">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IDENTIFICATION DOCUMENTS"
+            android:background="@color/light_green"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/box_border"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do you have a passport? *"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: Select 'Yes' if you have a passport, otherwise select 'No'."
+                android:textColor="@color/black" />
+
+            <RadioGroup
+                android:id="@+id/passport_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/passport_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YES"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/passport_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NO"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passport Number"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: If you selected 'Yes' above, enter your passport number."
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/passport_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your answer"
+                android:background="@color/white"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload your Passport Copy"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: If you selected 'Yes' above, upload a copy of your passport."
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/upload_passport_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add File" />
+        </LinearLayout>
+
+        <!-- Similar blocks for Aadhaar, PAN, Driving License, and Voter ID -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/box_border"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aadhaar Card Number *"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: Enter your Aadhaar card number."
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/aadhaar_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your answer"
+                android:background="@color/white"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload your Aadhaar Card Copy"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: If you selected 'Yes' above, upload a copy of your Aadhaar card."
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/upload_aadhaar_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add File" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/box_border"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PAN Card Number *"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: Enter your PAN card number."
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/pan_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your answer"
+                android:background="@color/white"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload your PAN Card Copy"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: If you selected 'Yes' above, upload a copy of your PAN card."
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/upload_pan_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add File" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/box_border"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Driving License Details (if applicable)"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: Enter your driving license number if applicable."
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/driving_license"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your answer"
+                android:background="@color/white"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload your Driving License Copy"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: If you selected 'Yes' above, upload a copy of your driving license."
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/upload_license_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add File" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/box_border"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voter ID Card Details (if applicable)"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: Enter your Voter ID card number if applicable."
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/voter_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your answer"
+                android:background="@color/white"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload your Voter ID Copy"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: If you selected 'Yes' above, upload a copy of your Voter ID card."
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/upload_voter_id_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add File" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+

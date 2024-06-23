@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/light_green">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Headline -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDUCATIONAL DETAILS"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:textColor="@color/black" />
+
+        <!-- Course -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/box_border"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Education Course *"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: Enter the course you have completed"
+                android:textColor="@color/gray_text" />
+            <EditText
+                android:id="@+id/education_course"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your answer"
+                android:background="@color/white"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Specialization -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/box_border"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Education Specialization *"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: Enter your area of specialization"
+                android:textColor="@color/gray_text" />
+            <EditText
+                android:id="@+id/education_specialization"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your answer"
+                android:background="@color/white"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Institution -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/box_border"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Education Institution *"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: Enter the name of the institution where you completed your course"
+                android:textColor="@color/gray_text" />
+            <EditText
+                android:id="@+id/education_institution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your answer"
+                android:background="@color/white"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Year of Completion -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/box_border"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Education Year of Completion *"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: Enter the date you completed your course"
+                android:textColor="@color/gray_text" />
+            <EditText
+                android:id="@+id/education_year_of_completion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your answer"
+                android:inputType="date"
+                android:background="@color/white"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Pass Percentage -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/box_border"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Education Pass Percentage *"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: Enter the percentage you achieved your course. Format: 85.0"
+                android:textColor="@color/gray_text" />
+            <EditText
+                android:id="@+id/education_pass_percentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your answer"
+                android:inputType="numberDecimal"
+                android:background="@color/white"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Proof of Education Completion -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/box_border"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Proof of Education Completion *"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: Upload the proof of your education completion. Please upload your Consolidated Marksheet, Semester Marksheet, Provisional Degree Certificate, Degree Completion Certificate"
+                android:textColor="@color/gray_text" />
+
+            <Button
+                android:id="@+id/upload_edu_certificates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add File" />
+            <!-- Add file upload logic here -->
+        </LinearLayout>
+
+        <!-- Certifications -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/box_border"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Any Certifications *"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: Select 'Yes' if you have any certifications, otherwise select 'No'."
+                android:textColor="@color/gray_text" />
+            <RadioGroup
+                android:id="@+id/certifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/certifications_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes" />
+                <RadioButton
+                    android:id="@+id/certifications_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Certifications Obtained -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/box_border"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Certifications Obtained *"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: List the certifications you have obtained"
+                android:textColor="@color/gray_text" />
+            <EditText
+                android:id="@+id/certifications_obtained"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your answer"
+                android:background="@color/white"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Certification Issuing Authority -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/box_border"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name of Certification Issuing Authority *"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: Enter the name of the authority that issued the certification"
+                android:textColor="@color/gray_text" />
+            <EditText
+                android:id="@+id/certification_issuing_authority"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your answer"
+                android:background="@color/white"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Certification Completion Date -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/box_border"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Certification Completion Date *"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: Select the date the certification was issued"
+                android:textColor="@color/gray_text" />
+            <EditText
+                android:id="@+id/certification_completion_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your answer"
+                android:inputType="date"
+                android:background="@color/white"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Proof of Certification -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/box_border"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Proof of Certification *"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: Upload the proof of your certification"
+                android:textColor="@color/gray_text" />
+            <Button
+                android:id="@+id/upload_certificates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add File" />
+            <!-- Add file upload logic here -->
+        </LinearLayout>
+
+        <!-- Tentative Joining Date -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/box_border"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please Enter a Tentative Date you are expected to join us Incase you are shortlisted/selected *"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: Select the date you are expected to join"
+                android:textColor="@color/gray_text" />
+            <EditText
+                android:id="@+id/tentative_joining_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your answer"
+                android:inputType="date"
+                android:background="@color/white"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Are you a Fresher -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/box_border"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Are you a Fresher? *"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: Select 'Yes' if you are a fresher, otherwise select 'No'."
+                android:textColor="@color/gray_text" />
+            <RadioGroup
+                android:id="@+id/fresher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/fresher_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes" />
+                <RadioButton
+                    android:id="@+id/fresher_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <!-- Navigation Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="16dp">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:layout_marginStart="16dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+

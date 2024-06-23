@@ -1,0 +1,217 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f1f1f1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#ffffff"
+        android:layout_margin="8dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACKNOWLEDGEMENT CONSENT"
+            android:textStyle="bold"
+            android:background="#cce7ff"
+            android:padding="12dp"
+            android:textColor="#FF000000"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Consent to conduct background checks -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF000000"
+            android:text="Consent to conduct background checks *"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF000000"
+            android:text="Description: Do you consent to background checks being conducted?"
+            android:layout_marginBottom="8dp"/>
+        <RadioGroup
+            android:id="@+id/radioGroupBackgroundCheckConsent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radioBackgroundCheckYes"
+                android:layout_width="wrap_content"
+                android:textColor="#FF000000"
+                android:layout_height="wrap_content"
+                android:text="YES" />
+            <RadioButton
+                android:id="@+id/radioBackgroundCheckNo"
+                android:layout_width="wrap_content"
+                android:textColor="#FF000000"
+                android:layout_height="wrap_content"
+                android:text="NO" />
+            <RadioButton
+                android:id="@+id/radioBackgroundCheckMaybe"
+                android:layout_width="wrap_content"
+                android:textColor="#FF000000"
+                android:layout_height="wrap_content"
+                android:text="MAYBE" />
+        </RadioGroup>
+
+        <!-- Consent to Drug/Alcohol Testing Consent -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consent to Drug/Alcohol Testing Consent *"
+            android:textColor="#FF000000"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description: Do you consent to drug and alcohol testing?"
+            android:textColor="#FF000000"
+            android:layout_marginBottom="8dp"/>
+        <RadioGroup
+            android:id="@+id/radioGroupDrugTestConsent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radioDrugTestYes"
+                android:layout_width="wrap_content"
+                android:textColor="#FF000000"
+                android:layout_height="wrap_content"
+                android:text="YES" />
+            <RadioButton
+                android:id="@+id/radioDrugTestNo"
+                android:layout_width="wrap_content"
+                android:textColor="#FF000000"
+                android:layout_height="wrap_content"
+                android:text="NO" />
+            <RadioButton
+                android:id="@+id/radioDrugTestMaybe"
+                android:layout_width="wrap_content"
+                android:textColor="#FF000000"
+                android:layout_height="wrap_content"
+                android:text="MAYBE" />
+        </RadioGroup>
+
+        <!-- Disclosure of any Criminal Convictions or Pending Criminal Cases -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF000000"
+            android:text="Disclosure of any Criminal Convictions or Pending Criminal Cases *"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF000000"
+            android:text="Description: Do you have any criminal convictions or pending cases?"
+            android:layout_marginBottom="8dp"/>
+        <RadioGroup
+            android:id="@+id/radioGroupCriminalDisclosure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radioCriminalYes"
+                android:layout_width="wrap_content"
+                android:textColor="#FF000000"
+                android:layout_height="wrap_content"
+                android:text="YES" />
+            <RadioButton
+                android:id="@+id/radioCriminalNo"
+                android:layout_width="wrap_content"
+                android:textColor="#FF000000"
+                android:layout_height="wrap_content"
+                android:text="NO" />
+        </RadioGroup>
+
+        <!-- Details of any Criminal Convictions or Pending Criminal Cases -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF000000"
+            android:text="Details of any Criminal Convictions or Pending Criminal Cases *"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF000000"
+            android:text="Description: Provide details of any criminal convictions or pending cases."
+            android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/editTextCriminalDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FF000000"
+            android:hint="Your answer"
+            android:background="@drawable/box_border"/>
+
+        <!-- Acknowledgment statement -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="By submitting this form, I acknowledge that all the information provided is true and accurate to the best of my knowledge. *"
+            android:textStyle="bold"
+            android:textColor="#FF000000"
+            android:layout_marginTop="16dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF000000"
+            android:text="Description: Confirm the accuracy of the information provided."
+            android:layout_marginBottom="8dp"/>
+        <RadioGroup
+            android:id="@+id/radioGroupAcknowledge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radioAcknowledgeYes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF000000"
+                android:text="YES" />
+            <RadioButton
+                android:id="@+id/radioAcknowledgeNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF000000"
+                android:text="NO" />
+        </RadioGroup>
+
+        <!-- Navigation Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="16dp">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:background="#cce7ff"
+                android:textColor="#000000"/>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_marginStart="16dp"
+                android:background="#4caf50"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

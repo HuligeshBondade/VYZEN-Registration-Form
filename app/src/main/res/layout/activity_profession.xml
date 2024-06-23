@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/light_green">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Professional Links and Documents"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_gravity="center"
+            android:textColor="@color/black" />
+
+        <!-- Photograph Upload -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/box_border"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Photograph *"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: Upload a recent passport-sized photograph."
+                android:textColor="@color/gray_text" />
+
+            <Button
+                android:id="@+id/upload_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add File" />
+        </LinearLayout>
+
+        <!-- Work Link / Portfolio -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/box_border"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work Link/Portfolio (LinkedIn) *"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: Provide a link to your LinkedIn profile or online portfolio."
+                android:textColor="@color/gray_text" />
+
+            <EditText
+                android:id="@+id/work_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your answer"
+                android:background="@color/white"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Resume/CV Upload -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/box_border"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please attach your updated Resume/CV *"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: Upload your resume and portfolio."
+                android:textColor="@color/gray_text" />
+
+            <Button
+                android:id="@+id/upload_resume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add File" />
+        </LinearLayout>
+
+        <!-- Social Media Links -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/box_border"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please share the links of your Social Media Profiles (Linkedin, Facebook, Instagram, etc.) *"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: Provide links to your social media profiles."
+                android:textColor="@color/gray_text" />
+
+            <EditText
+                android:id="@+id/social_media_links"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your answer"
+                android:background="@color/white"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Online Portfolio / Website Links -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/box_border"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please share the links of your Online Portfolio or Website (if applicable) (If none please mention NA) *"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: Provide the link to your online portfolio or personal website."
+                android:textColor="@color/gray_text" />
+
+            <EditText
+                android:id="@+id/online_portfolio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your answer"
+                android:background="@color/white"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Skills -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/box_border"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Skills *"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: List down all the skills you possess."
+                android:textColor="@color/gray_text" />
+
+            <EditText
+                android:id="@+id/skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your answer"
+                android:background="@color/white"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Languages -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/box_border"
+            android:padding="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Languages *"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: List the languages you are proficient in."
+                android:textColor="@color/gray_text" />
+
+            <EditText
+                android:id="@+id/languages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your answer"
+                android:background="@color/white"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Navigation Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
