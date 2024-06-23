@@ -32,12 +32,8 @@ This repository contains the Vyzen Registration Form, developed using Android St
 
 ## Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/vyzen-registration-form.git
-   ```
-2. Open the project in Android Studio.
-3. Build and run the application on an emulator or physical device running Android 7.0 (Nougat) or higher.
+1. Open the project in Android Studio.
+2. Build and run the application on an emulator or physical device running Android 7.0 (Nougat) or higher.
 
 ## Usage
 
