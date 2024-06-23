@@ -4,12 +4,10 @@ This repository contains the Vyzen Registration Form, developed using Android St
 
 ## Screenshots
 
-![IndexActivity](path/to/your/screenshot1.jpeg)
-![AddressActivity](path/to/your/screenshot2.jpeg)
-![IdentificationActivity](path/to/your/screenshot3.jpeg)
-![ProfessionActivity](path/to/your/screenshot4.jpeg)
-![EducationActivity](path/to/your/screenshot5.jpeg)
-![AcknowledgementActivity](path/to/your/screenshot6.jpeg)
+![WhatsApp Image 2024-06-23 at 11 27 43 PM](https://github.com/HuligeshBondade/VYZEN-Registration-Form/assets/107861136/a74e4016-5577-450f-a171-f762c198877c)
+
+![WhatsApp Image 2024-06-23 at 11 27 42 PM](https://github.com/HuligeshBondade/VYZEN-Registration-Form/assets/107861136/4f71142c-bdba-4bc6-a774-2b5a5b67a3bd)
+
 
 ## Features
 
@@ -56,18 +54,7 @@ This repository contains the Vyzen Registration Form, developed using Android St
    - Ensure all essential fields are filled to enable navigation to the next page.
 4. **Submit the Form**: On the AcknowledgementActivity page, click the "Submit" button to complete the registration.
 
-## Contributing
-
-Contributions are welcome! If you have suggestions for improvements or new features, please create a pull request or open an issue.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
 ## Contact
 
-For any questions or inquiries, please contact [your email address].
+For any questions or inquiries, please contact huligeshbondade62@gmail.com
 
----
-
-Feel free to customize this README file based on your specific requirements and details.
